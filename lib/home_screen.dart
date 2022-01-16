@@ -160,9 +160,6 @@ class _HomePageState extends State<HomePage> {
         );
       },
     );
-    // if (store == null) {
-    //   Navigator.pop(context);
-    // }
   }
 
   Future<void> _pickGalleryImage() async {
@@ -194,18 +191,4 @@ class _HomePageState extends State<HomePage> {
           ));
     }
   }
-  // Future<void> _pickCameraImage() async {
-  //   final pickedImage = await ImagePicker().pickImage(
-  //     source: ImageSource.camera,
-  //   );
-  //   imageFile = pickedImage != null ? File(pickedImage.path) : null;
-  //   setState(() {});
-  //   if (imageFile != null) {
-  //     Navigator.push(
-  //         context,
-  //         MaterialPageRoute(
-  //           builder: (context) => CropSample(imageFile),
-  //         ));
-  //   }
-  // }
 }
